@@ -1,37 +1,22 @@
-# syntax=docker/dockerfile:1.7
+# 动态构建版本（默认）：容器启动时执行 `npm run build` 生成 dist，再由 nginx 提供静态文件。
 
-FROM node:22-alpine AS builder
+FROM node:22-alpine
 
 WORKDIR /app
 
 ENV HUSKY=0
 
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm ci && apk add --no-cache nginx
 
 COPY . .
 
-ARG MENAV_ENABLE_SYNC=false
-ARG MENAV_IMPORT_BOOKMARKS=false
-
-RUN if [ "${MENAV_IMPORT_BOOKMARKS}" = "true" ]; then \
-      MENAV_BOOKMARKS_DETERMINISTIC=1 npm run import-bookmarks; \
-    fi \
-    && if [ "${MENAV_ENABLE_SYNC}" = "true" ]; then \
-      npm run build; \
-    else \
-      PROJECTS_ENABLED=false HEATMAP_ENABLED=false RSS_ENABLED=false npm run build; \
-    fi
-
-FROM nginx:1.27-alpine AS runtime
-
-WORKDIR /usr/share/nginx/html
-
-COPY docker/nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY --from=builder /app/dist ./
+COPY docker/nginx/default.conf /etc/nginx/http.d/default.conf
+COPY docker/entrypoint-build-and-serve.sh /usr/local/bin/entrypoint-build-and-serve.sh
+RUN chmod +x /usr/local/bin/entrypoint-build-and-serve.sh
 
 EXPOSE 80
 
 STOPSIGNAL SIGQUIT
 
-CMD ["nginx", "-g", "daemon off;"]
+ENTRYPOINT ["/usr/local/bin/entrypoint-build-and-serve.sh"]

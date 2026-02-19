@@ -206,15 +206,20 @@ npm run format
 <details>
 <summary>点击展开</summary>
 
-MeNav 构建后是纯静态站点（`dist/`），仓库已内置 Docker 部署文件，可直接构建并运行。
+仓库已内置 `docker-compose.yml`，并提供 GHCR 预构建镜像；两种方式都建议统一使用 Docker Compose。
 
-#### 方式一：Docker Compose（常用）
+> 说明：容器每次启动都会在容器内执行 `npm run build` 生成 `dist/`，然后用 nginx 提供静态文件。
+>
+> 请在仓库根目录执行（需要 `config/_default` 等文件）。
 
-1. 准备配置（首次使用）：
-   - 按 [设置配置文件](#设置配置文件) 完成 `config/user/` 配置
-   - 如果要导入书签，可先把书签 HTML 放到 `bookmarks/` 目录
+#### 方式 A：使用预构建镜像（推荐，免本地构建）
 
-2. 构建并启动：
+```bash
+docker compose pull
+docker compose up -d --no-build
+```
+
+#### 方式 B：本地构建镜像（适合二次开发/改源码）
 
 ```bash
 docker compose up -d --build
@@ -222,46 +227,24 @@ docker compose up -d --build
 
 默认访问地址：`http://localhost:8080`
 
-3. 常用可选参数（通过环境变量传入）：
+#### 可选参数（环境变量）
 
 ```bash
-MENAV_PORT=80 MENAV_ENABLE_SYNC=true MENAV_IMPORT_BOOKMARKS=true docker compose up -d --build
+MENAV_PORT=80 MENAV_ENABLE_SYNC=true MENAV_IMPORT_BOOKMARKS=true docker compose up -d --no-build
 ```
 
 - `MENAV_PORT`：宿主机端口（默认 `8080`）
-- `MENAV_ENABLE_SYNC`：是否在镜像构建时联网执行 `sync-*`（默认 `false`，更稳定）
-- `MENAV_IMPORT_BOOKMARKS`：是否在镜像构建时执行 `npm run import-bookmarks`（默认 `false`）
+- `MENAV_ENABLE_SYNC`：启动构建时是否联网执行 `sync-*`（默认 `false`，更稳定）
+- `MENAV_IMPORT_BOOKMARKS`：启动构建前是否执行 `npm run import-bookmarks`（默认 `false`）
 
-4. 更新站点：
-   - 修改配置或内容后，重新执行 `docker compose up -d --build`
+#### 配置与更新
 
-#### 方式二：直接使用 Docker 命令
-
-```bash
-docker build -t menav \
-  --build-arg MENAV_ENABLE_SYNC=false \
-  --build-arg MENAV_IMPORT_BOOKMARKS=false .
-
-docker run -d --name menav -p 8080:80 --restart unless-stopped menav
-```
-
-#### 使用 GHCR 预构建镜像（免本地构建）
-
-仓库已提供 `Docker Publish (GHCR)` 工作流（`.github/workflows/docker-ghcr.yml`）：
-
-- 推送到 `main` 时自动发布 `latest`
-- 推送 `v*` 标签时自动发布版本标签（如 `v1.3.0`）
-- 对外标签策略：仅 `latest` 与版本标签
-
-首次启用前请在仓库设置确认：
-
-1. `Settings -> Actions -> General -> Workflow permissions` 设为 `Read and write permissions`
-2. 在 `Packages` 中将镜像可见性设为 `Public`（否则匿名用户无法拉取）
-
-发布后，用户可直接拉取并运行（将 `<owner>/<repo>` 替换为你的仓库路径）：
+- 配置目录挂载在 `./config`，个人配置按“完全替换策略”建议：将 `config/_default/` 完整复制到 `config/user/` 再修改（见 [设置配置文件](#设置配置文件) 与 `config/README.md`）。
+- 如需导入书签：将浏览器导出的书签 HTML 放到 `./bookmarks/`，并设置 `MENAV_IMPORT_BOOKMARKS=true` 后重启容器。
+- 修改配置/书签后生效方式（触发重新构建）：
 
 ```bash
-docker run -d --name menav -p 8080:80 --restart unless-stopped ghcr.io/<owner>/<repo>:latest
+docker compose restart menav
 ```
 
 </details>
