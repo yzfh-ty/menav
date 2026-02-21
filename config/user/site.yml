@@ -84,14 +84,6 @@ rss:
     total: 50 # 全站聚合上限
     summaryMaxLength: 200 # 摘要最大长度（字符）
 
-# GitHub：用于 projects 页面右侧“贡献热力图”（可选）
-# - username：你的 GitHub 用户名（例如 torvalds）
-# - heatmapColor：热力图主题色（不带 #，例如 339af0）
-github:
-  username: 'rbetree' # 你的 GitHub 用户名（例如 torvalds；为空则 projects 页不展示热力图）
-  heatmapColor: 37b24d
-  cacheDir: dev # projects 仓库元信息缓存目录（默认 dev，仓库默认 gitignore）
-
 # 社交媒体链接：显示在侧边栏底部；可按需增删
 social:
   - name: GitHub
@@ -112,15 +104,6 @@ navigation:
   - name: 常用 # 菜单名称
     icon: fas fa-star # Font Awesome 图标类
     id: common # 页面标识符（唯一，需与 pages/<id>.yml 对应）
-  - name: 项目
-    icon: fas fa-project-diagram
-    id: projects
-  - name: 文章
-    icon: fas fa-book
-    id: articles
   - name: 书签
     icon: fas fa-bookmark
     id: bookmarks
-  - name: 关于
-    icon: fas fa-file-alt
-    id: content
