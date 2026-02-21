@@ -92,12 +92,6 @@ social:
   - name: Telegram
     url: https://t.me
     icon: fab fa-telegram
-  - name: Twitter
-    url: https://twitter.com
-    icon: fab fa-twitter
-  - name: Steam
-    url: https://steam.com
-    icon: fab fa-steam
 
 # 导航配置（顺序第一项即首页/默认打开页）
 navigation:
