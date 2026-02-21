@@ -10,7 +10,6 @@ categories:
     path:
       - 根目录书签
     sites:
-<<<<<<< Updated upstream
       - name: yzfh 导航
         url: https://yzfh.xyz/
         icon: fas fa-link
@@ -1094,14 +1093,3 @@ categories:
         url: https://gaojilingjuli.blogspot.com/2024/10/clawcloud-vps-claudechatgpt.html?m=1
         icon: fas fa-link
         description: ''
-=======
-      - name: 'GitHub'
-        url: 'https://github.com/'
-        icon: 'fab fa-github'
-        description: '代码托管平台'
-      - name: 'B站'
-        url: 'https://www.bilibili.com/'
-        icon: 'fas fa-video'
-        description: '弹幕视频网站'
-
->>>>>>> Stashed changes
