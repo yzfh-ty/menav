@@ -46,10 +46,6 @@ categories:
         url: https://www.svyun.com/home.htm
         icon: fas fa-link
         description: ''
-      - name: 飞牛0day专杀脚本
-        url: https://gist.github.com/luodaoyi/3317b3b584ce173bff15d76e7797bcda
-        icon: fab fa-github
-        description: ''
   - name: 资源
     icon: fas fa-folder
     path:
