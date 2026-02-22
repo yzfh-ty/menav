@@ -142,16 +142,16 @@ function generatePageContent(pageId, data) {
 
   // 首页使用 profile 数据，其他页面使用自身数据
   if (pageId === 'home') {
-    const profile = data.profile || {};
+//     const profile = data.profile || {};
 
-    return `
-                <div class="welcome-section">
-                    <div class="welcome-section-main">
-                        <h2>${escapeHtml(profile.title || '欢迎使用')}</h2>
-                        <h3>${escapeHtml(profile.subtitle || '个人导航站')}</h3>
-                    </div>
-                </div>
-${generateCategories(data.categories)}`;
+//     return `
+//                 <div class="welcome-section">
+//                     <div class="welcome-section-main">
+//                         <h2>${escapeHtml(profile.title || '欢迎使用')}</h2>
+//                         <h3>${escapeHtml(profile.subtitle || '个人导航站')}</h3>
+//                     </div>
+//                 </div>
+// ${generateCategories(data.categories)}`;
   } else {
     // 其他页面使用通用结构
     const title = data.title || `${pageId} 页面`;
