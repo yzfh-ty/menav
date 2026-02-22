@@ -12,16 +12,48 @@ categories:
   - name: 置顶
     icon: fas fa-star # 分类图标
     sites:
-      - name: Linux.do # 站点名称
+      - name: LINUX DO # 站点名称
         url: https://linux.do/ # http/https URL（favicon 模式将尝试加载站点图标）
         icon: fab fa-linux # 手动图标：manual 模式使用；favicon 模式下作为回退
         description: 新的理想型社区 # 站点描述
+      - name: IDC Flare
+        url: https://idcflare.com
+        icon: fab fa-server
+        description: 域名、主机等信息集散地
+      - name: 探针
+        url: https://komari.yzfh.xy
+        icon: fa-solid fa-server
+        description: 个人服务器监控
+      - name: 网站监控
+        url: https://status.yzfh.de
+        icon: fa-solid fa-display
+        description: 个人网站监控
+      - name: Cloud Flare
+        url: https://dash.cloudflare.com
+        icon: fa-solid fa-cloud
+        description: 大善人
       - name: GitHub
         url: https://www.github.com
         icon: fab fa-github
         description: 代码托管平台
+      - name: 临时邮箱
+        url: https://mail.yzfh.de
+        icon: fa-solid fa-envelope
+        description: 萌萌哒临时邮箱服务
+      - name: 图床
+        url: https://img.tysverse.com
+        icon: fa-solid fa-image
+        description: 自建图床
+      - name: KIMI
+        url: https://www.kimi.com
+        icon: fa-solid fa-robot
+        description: 月之暗面 AI
       - name: 哔哩哔哩
         url: https://www.bilibili.com
-        icon: fas fa-play-circle
-        description: 视频学习平台
+        icon: fa-solid fa-play-circle
+        description: 视频平台
 
+      # - name:
+      #   url:
+      #   icon:
+      #   description:
