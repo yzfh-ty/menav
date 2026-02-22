@@ -25,6 +25,15 @@
   }
 }
 
+/* When Todo/Stats module is hidden, use a single full-width column */
+.dashboard-grid:not(:has(.dashboard-stats)) {
+  grid-template-columns: 1fr;
+}
+
+.dashboard-grid.intro-only {
+  grid-template-columns: 1fr;
+}
+
 /* --- Left Column: Welcome & Clock --- */
 .dashboard-intro {
   display: flex;
@@ -41,6 +50,8 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
+  align-items: center;
+  text-align: center;
 }
 
 .welcome-title {
@@ -57,9 +68,10 @@
   color: var(--text-color);
   /* Use primary text color, accent reserved for highlights */
   line-height: 0.95;
-  margin: 0;
-  padding-left: var(--spacing-xl);
-  /* Shift right */
+  margin: 6rem 0;
+  width: 100%;
+  text-align: center;
+  padding-left: 0;
 }
 
 .welcome-subtitle {
@@ -77,8 +89,7 @@
 @media (min-width: 768px) {
   .welcome-title {
     font-size: 3.5rem;
-    padding-left: 2rem;
-    /* Reduced from 5rem */
+    padding-left: 0;
   }
 
   .welcome-subtitle {
@@ -361,7 +372,7 @@ body.light-theme .dashboard-panel {
   /* 适当减小欢迎语字号 */
   .welcome-title {
     font-size: 2.5rem;
-    padding-left: 1rem;
+    padding-left: 0;
   }
 
   .welcome-subtitle {
