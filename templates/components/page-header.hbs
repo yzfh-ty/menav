@@ -7,13 +7,6 @@
         {{else}}
             <div class="welcome-title-row">
                 <h2 data-editable="page-title">{{title}}</h2>
-                {{#if pageMeta}}
-                {{#if pageMeta.updatedAt}}
-                    <span class="page-updated-inline" title="{{pageMeta.updatedAt}}">
-                        update: {{formatDate pageMeta.updatedAt "YYYY-MM-DD"}} | from: {{pageMeta.updatedAtSource}}
-                    </span>
-                {{/if}}
-                {{/if}}
             </div>
             <p class="subtitle" data-editable="page-subtitle">{{subtitle}}</p>
         {{/ifEquals}}

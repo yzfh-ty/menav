@@ -750,7 +750,7 @@ function generateBookmarksYaml(bookmarks) {
     // 创建书签页面配置
     const bookmarksPage = {
       title: '我的书签',
-      subtitle: '从浏览器导入的书签收藏',
+      subtitle: '',
       categories: bookmarks.categories,
     };
 

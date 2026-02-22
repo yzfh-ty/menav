@@ -3,7 +3,7 @@
 # 此文件使用模块化配置格式，位于config/user/pages/目录下
 
 title: 我的书签
-subtitle: 从浏览器导入的书签收藏
+subtitle: ''
 categories:
   - name: 根目录书签
     icon: fas fa-star
