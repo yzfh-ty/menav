@@ -57,3 +57,72 @@ categories:
       #   url:
       #   icon:
       #   description:
+  - name: 自建服务
+    icon: fas fa-folder
+    path:
+      - 自建服务
+    sites:
+      - name: Tyverse Status
+        url: https://status.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: Cloudflare 临时邮件
+        url: https://fyzy.de5.net/
+        icon: fas fa-link
+        description: ''
+      - name: 影视库
+        url: https://emby.525866.xyz/
+        icon: fas fa-link
+        description: ''
+      - name: NextChat
+        url: https://ai.525866.xyz/
+        icon: fas fa-link
+        description: ''
+      - name: MoeMail - 萌萌哒临时邮箱服务 · 开放 API
+        url: https://mail.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: Sub Store
+        url: https://tz.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: Tyverse の服务器
+        url: https://servers.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: qBittorrent Web UI
+        url: https://qb.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: Vaultwarden Web
+        url: https://passwd.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: 主页 | OpenList
+        url: https://openlist.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: MoviePilot
+        url: https://mp.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: 首页 - Lsky Pro+
+        url: https://img.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: 文件快递柜 - FileCodeBox
+        url: https://file.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: 影视库
+        url: https://emby.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: Tyverse 博客 – 慢热喜静，有趣有盼
+        url: https://tyverse.de/
+        icon: fas fa-link
+        description: ''
+      - name: MoviePilot
+        url: https://mp.yzfh.de/
+        icon: fas fa-link
+        description: ''
