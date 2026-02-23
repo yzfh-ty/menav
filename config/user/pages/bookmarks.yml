@@ -10,28 +10,8 @@ categories:
     path:
       - 根目录书签
     sites:
-      - name: yzfh 导航
-        url: https://yzfh.xyz/
-        icon: fas fa-link
-        description: ''
       - name: 薄荷公益站签到
         url: https://qd.x666.me/
-        icon: fas fa-link
-        description: ''
-      - name: 首页 - Lsky Pro+
-        url: https://img.tysverse.com/
-        icon: fas fa-link
-        description: ''
-      - name: 服务器监控 - Komari Monitor
-        url: https://komari.yzfh.xyz/
-        icon: fas fa-link
-        description: ''
-      - name: Active users - Microsoft 365 admin center
-        url: https://admin.cloud.microsoft/?#/users
-        icon: fas fa-link
-        description: ''
-      - name: 设置 - SharePoint 管理中心
-        url: https://yzfh03-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx?modern=true#/settings
         icon: fas fa-link
         description: ''
       - name: zashboard | 代理
@@ -329,22 +309,6 @@ categories:
         url: https://push.yzfh.de/moe/endpoints
         icon: fas fa-link
         description: ''
-      - name: MoeMail - 萌萌哒临时邮箱服务 · 开放 API
-        url: https://mail.yzfh.de/zh-CN/moe
-        icon: fas fa-link
-        description: ''
-      - name: CLI Proxy API Management Center
-        url: https://ai.yzfh.de/management.html#/config
-        icon: fas fa-link
-        description: ''
-      - name: Cloudflare 临时邮件
-        url: https://fyzy.de5.net/
-        icon: fas fa-link
-        description: ''
-      - name: Tyverse Status
-        url: https://status.yzfh.de/
-        icon: fas fa-link
-        description: ''
   - name: 平台
     icon: fas fa-folder
     path:
@@ -384,6 +348,10 @@ categories:
             description: ''
           - name: Machines - Tailscale
             url: https://login.tailscale.com/admin/machines
+            icon: fas fa-link
+            description: ''
+          - name: SakuraFrp
+            url: https://www.natfrp.com/user/
             icon: fas fa-link
             description: ''
           - name: 业务概览 - 比扬云
@@ -593,10 +561,6 @@ categories:
         description: ''
       - name: BGP.Tools
         url: https://bgp.tools/
-        icon: fas fa-link
-        description: ''
-      - name: SakuraFrp
-        url: https://www.natfrp.com/user/
         icon: fas fa-link
         description: ''
   - name: 工具
@@ -1085,7 +1049,84 @@ categories:
         url: https://digitzn.recmg.com/tech/jolene/fix-acer-care-center-service-is-still-initializing-error-pc/
         icon: fas fa-link
         description: ''
+      - name: 设置 - SharePoint 管理中心
+        url: https://yzfh03-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx?modern=true#/settings
+        icon: fas fa-link
+        description: ''
+      - name: Active users - Microsoft 365 admin center
+        url: https://admin.cloud.microsoft/?#/users
+        icon: fas fa-link
+        description: ''
       - name: ClawCloud 香港vps 一键解锁 Claude，ChatGpt，奈菲等。
         url: https://gaojilingjuli.blogspot.com/2024/10/clawcloud-vps-claudechatgpt.html?m=1
+        icon: fas fa-link
+        description: ''
+  - name: 自建服务
+    icon: fas fa-folder
+    path:
+      - 自建服务
+    sites:
+      - name: Tyverse Status
+        url: https://status.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: Cloudflare 临时邮件
+        url: https://fyzy.de5.net/
+        icon: fas fa-link
+        description: ''
+      - name: 影视库
+        url: https://emby.525866.xyz/
+        icon: fas fa-link
+        description: ''
+      - name: NextChat
+        url: https://ai.525866.xyz/
+        icon: fas fa-link
+        description: ''
+      - name: MoeMail - 萌萌哒临时邮箱服务 · 开放 API
+        url: https://mail.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: Sub Store
+        url: https://tz.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: Tyverse の服务器
+        url: https://servers.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: qBittorrent Web UI
+        url: https://qb.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: Vaultwarden Web
+        url: https://passwd.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: 主页 | OpenList
+        url: https://openlist.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: MoviePilot
+        url: https://mp.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: 首页 - Lsky Pro+
+        url: https://img.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: 文件快递柜 - FileCodeBox
+        url: https://file.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: 影视库
+        url: https://emby.yzfh.de/
+        icon: fas fa-link
+        description: ''
+      - name: Tyverse 博客 – 慢热喜静，有趣有盼
+        url: https://tyverse.de/
+        icon: fas fa-link
+        description: ''
+      - name: MoviePilot
+        url: https://mp.yzfh.de/
         icon: fas fa-link
         description: ''
