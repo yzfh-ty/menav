@@ -36,6 +36,10 @@ categories:
         url: https://www.bilibili.com
         icon: fa-solid fa-play-circle
         description: 视频平台
+      - name: Font Awesome
+        url: https://fontawesome.com/search
+        icon: fa-solid fa-play-circle
+        description: 图标
   - name: 自建服务
     icon: fas fa-folder
     path:
@@ -49,14 +53,10 @@ categories:
         url: https://img.yzfh.de
         icon: fa-solid fa-image
         description: 自建图床
-      - name: 邮局
-        url: https://mail.tyverse.de
-        icon: fa-solid fa-envelope
-        description: 自建邮局
-      - name: 探针
-        url: https://servers.yzfh.de
-        icon: fa-solid fa-server
-        description: 个人服务器监控
+      - name: Code Server
+        url: https://code.yzfh.de/
+        icon: fa-solid fa-code
+        description: 云端 VSCODE
       - name: MoviePilot
         url: https://mp.yzfh.de/
         icon: fas fa-link
@@ -65,14 +65,26 @@ categories:
         url: https://file.yzfh.de/
         icon: fas fa-link
         description: '文件临时分享'
+      - name: 探针
+        url: https://servers.yzfh.de
+        icon: fa-solid fa-server
+        description: 个人服务器监控
       - name: 网站监控
         url: https://status.yzfh.de
         icon: fa-solid fa-display
         description: 个人网站监控
+      - name: 邮局
+        url: https://mail.tyverse.de
+        icon: fa-solid fa-envelope
+        description: 自建邮局
       - name: 临时邮件
         url: https://fyzy.de5.net/
         icon: fa-solid fa-envelope
         description: '注册机专用'
+      - name: 临时邮箱
+        url: https://mail.yzfh.de
+        icon: fa-solid fa-envelope
+        description: 萌萌哒临时邮箱服务
       - name: 影视库
         url: https://emby.yzfh.de/
         icon: fa-solid fa-clapperboard
@@ -81,10 +93,6 @@ categories:
         url: https://ai.525866.xyz/
         icon: fas fa-link
         description: '网页版自建 AI'
-      - name: 临时邮箱
-        url: https://mail.yzfh.de
-        icon: fa-solid fa-envelope
-        description: 萌萌哒临时邮箱服务
       - name: Sub Store
         url: https://tz.yzfh.de/
         icon: fas fa-link
