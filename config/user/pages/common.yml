@@ -46,7 +46,7 @@ categories:
         icon: fas fa-link
         description: '慢热喜静，有趣有盼'
       - name: 图床
-        url: https://img.tyverse.de
+        url: https://img.yzfh.de
         icon: fa-solid fa-image
         description: 自建图床
       - name: 邮局
