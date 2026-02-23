@@ -244,71 +244,6 @@ categories:
         url: https://faxianx.com/
         icon: fas fa-link
         description: ''
-  - name: 建站
-    icon: fas fa-folder
-    path:
-      - 建站
-    sites:
-      - name: 网盘集合
-        url: https://alist.525866.xyz/
-        icon: fas fa-link
-        description: ''
-      - name: 宝塔Linux面板
-        url: https://39.106.130.23:30443/c9eafe74
-        icon: fas fa-link
-        description: ''
-      - name: 逸仙的小窝 – 慢热喜静，有趣有盼
-        url: https://blog.525866.xyz/
-        icon: fas fa-link
-        description: ''
-      - name: 仪表盘 ‹ 逸仙 — WordPress
-        url: https://blog.525866.xyz/wp-admin/
-        icon: fas fa-link
-        description: ''
-      - name: 逸仙 站点监测
-        url: https://stats.uptimerobot.com/L0KAiNpYlH
-        icon: fas fa-link
-        description: ''
-      - name: frps dashboard
-        url: http://39.106.130.23:2003/static/#/
-        icon: fas fa-link
-        description: ''
-      - name: 主页 | OpenList
-        url: http://27.106.113.205:12003/
-        icon: fas fa-link
-        description: ''
-      - name: 随机图片api
-        url: https://api.yixian.525866.xyz/api.php
-        icon: fas fa-link
-        description: ''
-      - name: 宝塔Linux面板(ssh转发-阿里)
-        url: https://127.0.0.1:30443/home
-        icon: fas fa-link
-        description: ''
-      - name: 从零开始的嵌入式之旅
-        url: https://embedded.525866.xyz/
-        icon: fas fa-link
-        description: ''
-      - name: 宝塔Linux面板（华为云）
-        url: http://127.0.0.1:13464/788fb40f
-        icon: fas fa-link
-        description: ''
-      - name: 概述
-        url: https://search.google.com/search-console?resource_id=sc-domain%3Atysverse.com
-        icon: fab fa-google
-        description: ''
-      - name: Home - Bing Webmaster Tools
-        url: https://www.bing.com/webmasters?siteUrl=https://tysverse.com/
-        icon: fas fa-link
-        description: ''
-      - name: 'poste.io :: 收件箱'
-        url: https://mail.tysverse.com/webmail/?_task=mail&amp;_mbox=INBOX
-        icon: fas fa-link
-        description: ''
-      - name: MoePush - 可爱又强大的消息推送服务
-        url: https://push.yzfh.de/moe/endpoints
-        icon: fas fa-link
-        description: ''
   - name: 平台
     icon: fas fa-folder
     path:
@@ -326,6 +261,14 @@ categories:
             description: ''
           - name: Client ID for Web application – APIs &amp; Services – wp-blog – Google Cloud console
             url: https://console.cloud.google.com/apis/credentials/oauthclient/659931312930-1ouqj5j4d4cs56i96f56u9s3givjbq5m.apps.googleusercontent.com?project=wp-blog-416703
+            icon: fab fa-google
+            description: ''
+          - name: Home - Bing Webmaster Tools
+            url: https://www.bing.com/webmasters?siteUrl=https://tysverse.com/
+            icon: fas fa-link
+            description: ''
+          - name: 概述
+            url: https://search.google.com/search-console?resource_id=sc-domain%3Atysverse.com
             icon: fab fa-google
             description: ''
           - name: Home - Bing Webmaster Tools
