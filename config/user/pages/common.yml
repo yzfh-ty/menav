@@ -46,11 +46,15 @@ categories:
         icon: fas fa-link
         description: '慢热喜静，有趣有盼'
       - name: 图床
-        url: https://img.tysverse.com
+        url: https://img.tyverse.de
         icon: fa-solid fa-image
         description: 自建图床
+      - name: 邮局
+        url: https://mail.tyverse.de
+        icon: fa-solid fa-envelope
+        description: 自建邮局
       - name: 探针
-        url: https://komari.yzfh.xy
+        url: https://servers.yzfh.de
         icon: fa-solid fa-server
         description: 个人服务器监控
       - name: MoviePilot
@@ -85,7 +89,6 @@ categories:
         url: https://tz.yzfh.de/
         icon: fas fa-link
         description: '聚合'
-
       - name: qBittorrent
         url: https://qb.yzfh.de/
         icon: fa-solid fa-cloud-arrow-down
