@@ -26,6 +26,10 @@ categories:
         url: https://www.svyun.com/home.htm
         icon: fas fa-link
         description: ''
+      - name: Tyverse 导航页
+        url: https://yzfh.de/
+        icon: fas fa-link
+        description: ''
   - name: 资源
     icon: fas fa-folder
     path:
@@ -762,16 +766,8 @@ categories:
             url: https://hdtime.org/index.php
             icon: fas fa-link
             description: ''
-          - name: '青蛙 :: 首页 - Powered by NexusPHP'
-            url: https://www.qingwapt.com/
-            icon: fas fa-link
-            description: ''
           - name: '织梦 :: 首页 - Powered by NexusPHP'
             url: https://zmpt.cc/index.php
-            icon: fas fa-link
-            description: ''
-          - name: 'Rousi :: 首页 - Powered by NexusPHP'
-            url: https://rousi.zip/index.php
             icon: fas fa-link
             description: ''
           - name: '咖啡 :: 首页 - Powered by NexusPHP'
@@ -802,10 +798,6 @@ categories:
             url: https://cspt.cc/index.php
             icon: fas fa-link
             description: ''
-          - name: '铂金学院 :: 首页 - Powered by NexusPHP'
-            url: https://ptchina.org/index.php
-            icon: fas fa-link
-            description: ''
           - name: 'RailgunPT :: 首页 - Powered by NexusPHP'
             url: https://bilibili.download/index.php
             icon: fas fa-link
@@ -820,6 +812,10 @@ categories:
             description: ''
           - name: 'Arctic Global Seed Vault :: 首页 - Powered by NexusPHP'
             url: https://www.agsvpt.com/index.php
+            icon: fas fa-link
+            description: ''
+          - name: '青蛙 :: 首页 - Powered by NexusPHP'
+            url: https://www.qingwapt.com/index.php
             icon: fas fa-link
             description: ''
       - name: 外站
@@ -873,10 +869,6 @@ categories:
         url: https://pting.club/
         icon: fas fa-link
         description: ''
-      - name: Telegraph图床-基于Workers的图床服务
-        url: https://img.yzfh.dpdns.org/
-        icon: fas fa-link
-        description: ''
       - name: pt邀请黑名单
         url: https://docs.qq.com/sheet/DZGV1cHFxTkh2a2F4?u=51e58736f00c4844a253d7e78da0e373&amp;nlc=1&amp;tab=000001
         icon: fas fa-link
@@ -920,10 +912,6 @@ categories:
         description: ''
       - name: Transmission WEB 控制器 1.6.1
         url: http://192.168.3.54:9091/transmission/web/
-        icon: fas fa-link
-        description: ''
-      - name: Portainer | VM
-        url: http://192.168.127.128:9000/#!/home
         icon: fas fa-link
         description: ''
       - name: Lucky | 关于
