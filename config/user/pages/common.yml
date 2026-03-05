@@ -89,10 +89,10 @@ categories:
         url: https://emby.yzfh.de/
         icon: fa-solid fa-clapperboard
         description: '自建影视库'
-      - name: NextChat
-        url: https://ai.525866.xyz/
+      - name: Grok2Api
+        url: https://grok.525866.xyz/
         icon: fas fa-link
-        description: '网页版自建 AI'
+        description: 'AI Api'
       - name: Sub Store
         url: https://tz.yzfh.de/
         icon: fas fa-link
