@@ -105,6 +105,10 @@ categories:
         url: https://passwd.yzfh.de/
         icon: fas fa-link
         description: '密码保险箱'
+      - name: Obsidian 同步
+        url: https://note.yzfh.de
+        icon: fas fa-link
+        description: '笔记同步'
       - name: OpenList
         url: https://openlist.yzfh.de/
         icon: fas fa-link
