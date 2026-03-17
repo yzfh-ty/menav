@@ -12,10 +12,18 @@ categories:
   - name: 置顶
     icon: fas fa-star # 分类图标
     sites:
-      - name: LINUX DO # 站点名称
-        url: https://linux.do/ # http/https URL（favicon 模式将尝试加载站点图标）
-        icon: fab fa-linux # 手动图标：manual 模式使用；favicon 模式下作为回退
-        description: 新的理想型社区 # 站点描述
+      - name: 奶昔论坛
+        url: https://forum.naixi.net
+        icon: fab fa-server
+        description: 综合论坛
+      - name: NodeSeek
+        url: https://www.nodeseek.com
+        icon: fab fa-server
+        description: 服务器、域名相关论坛
+      - name: LINUX DO 
+        url: https://linux.do/ 
+        icon: fab fa-linux
+        description: 新的理想型社区
       - name: IDC Flare
         url: https://idcflare.com
         icon: fab fa-server
