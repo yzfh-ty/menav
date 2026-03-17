@@ -1,39 +1,40 @@
 #!/bin/bash
 # =============================================
-# 文件名：gitpush
-# 用途：一键 add + commit + push（自动消息强制英文）
-# 作者：已按要求改成英文 commit message
+# 文件名：gitpush.sh
+# 用途：Linux 一键 git add + commit + push（自动英文消息只用“Modify bookmark information”）
+# 作者：已按要求提供 Linux 版 + 全中文提示
 # =============================================
 
-echo "🚀 Starting Git auto push..."
+echo "🚀 开始 Git 自动推送..."
 
 # 1. 添加所有修改
 git add .
 
-# 2. 检查是否真的有改动
-if git diff --cached --quiet; then
-    echo "✅ No changes detected, nothing to commit."
+# 2. 检查是否有改动
+git diff --cached --quiet
+if [ $? -eq 0 ]; then
+    echo "✅ 没有检测到更改，无需提交。"
     exit 0
 fi
 
-# 3. 获取提交说明（核心：自动生成英文）
-echo "请输入提交说明（直接回车 = 自动生成英文消息）："
-read -r message
+# 3. 获取提交说明（直接回车 = 自动固定英文消息）
+echo -n "请输入提交说明（直接回车 = 自动生成英文消息）: "
+read message
 
 if [ -z "$message" ]; then
-    # 自动生成英文消息（你最想要的！）
-    changed_files=$(git diff --cached --name-only | wc -l)
-    message="Auto update at $(date '+%Y-%m-%d %H:%M:%S') - Modified ${changed_files} files"
-    echo "🤖 Using auto English message: ${message}"
+    # 自动生成固定英文消息（只用你指定的一句）
+    message="Modify bookmark information"
+    echo "🤖 使用自动英文消息: $message"
 else
-    echo "📝 Using your message: ${message}"
+    echo "📝 使用你的消息: $message"
 fi
 
-# 4. 提交（英文消息已确保）
+# 4. 提交
 git commit -m "$message"
 
-# 5. 推送（自动使用当前分支）
+# 5. 推送（自动当前分支）
 current_branch=$(git branch --show-current)
 git push origin "$current_branch"
 
-echo "🎉 Push completed! Refresh GitHub to see the update～"
+echo "🎉 推送完成！刷新 GitHub 查看更新～"
+read -p "按回车键继续..."
