@@ -40,6 +40,10 @@ categories:
         url: https://fontawesome.com/search
         icon: fa-solid fa-play-circle
         description: 图标
+      - name: Telegram
+        url: https://web.telegram.org/k/
+        icon: fab fa-telegram
+        description: 社交平台
   - name: 自建服务
     icon: fas fa-folder
     path:
