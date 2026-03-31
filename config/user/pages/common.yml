@@ -101,6 +101,14 @@ categories:
         url: https://emby.yzfh.de/
         icon: fa-solid fa-clapperboard
         description: '自建影视库'
+      - name: 影视库-TG
+        url: https://movies.525866.xyz/
+        icon: fa-solid fa-clapperboard
+        description: '影视库-TG'
+      - name: TgToDrive
+        url: https://tg.525866.xyz/
+        icon: fa-solid fa-clapperboard
+        description: '115资源自动转存生成strm'
       - name: Grok2Api
         url: https://grok.525866.xyz/
         icon: fas fa-link
