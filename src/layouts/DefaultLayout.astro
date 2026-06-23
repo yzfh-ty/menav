@@ -50,9 +50,9 @@ const fontAwesomePreload = `<link rel="preload" href="${fontAwesomeCssUrl}" as="
     <link rel="icon" href={`./${favicon}`} type="image/x-icon" />
     <link rel="shortcut icon" href={`./${favicon}`} type="image/x-icon" />
     <Fragment set:html={fontLinks} />
-    <style set:html={fontCss}></style>
     <ThemePreloadScript />
     <link rel="stylesheet" href="./assets/style.css" />
+    <style set:html={fontCss}></style>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <Fragment set:html={fontAwesomePreload} />
     <noscript>
