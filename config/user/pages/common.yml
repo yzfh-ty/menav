@@ -28,18 +28,6 @@ categories:
         url: https://www.github.com
         icon: fab fa-github
         description: 代码托管平台
-      - name: KIMI
-        url: https://www.kimi.com
-        icon: fa-solid fa-robot
-        description: 月之暗面 AI
-      - name: 哔哩哔哩
-        url: https://www.bilibili.com
-        icon: fa-solid fa-play-circle
-        description: 视频平台
-      - name: Font Awesome
-        url: https://fontawesome.com/search
-        icon: fa-solid fa-play-circle
-        description: 图标
       - name: Telegram
         url: https://web.telegram.org/k/
         icon: fab fa-telegram
@@ -57,18 +45,10 @@ categories:
         url: https://img.yzfh.de
         icon: fa-solid fa-image
         description: 自建图床
-      - name: Code Server
-        url: https://code.yzfh.de/
-        icon: fa-solid fa-code
-        description: 云端 VSCODE
       - name: MoviePilot
         url: https://mp.yzfh.de/
         icon: fas fa-link
         description: 'NAS 影视管理'
-      - name: 文件快递柜
-        url: https://file.yzfh.de/
-        icon: fas fa-link
-        description: '文件临时分享'
       - name: 探针
         url: https://servers.yzfh.de
         icon: fa-solid fa-server
@@ -93,10 +73,6 @@ categories:
         url: https://emby.yzfh.de/
         icon: fa-solid fa-clapperboard
         description: '自建影视库'
-      - name: Grok2Api
-        url: https://grok.525866.xyz/
-        icon: fas fa-link
-        description: 'AI Api'
       - name: Sub Store
         url: https://tz.yzfh.de/
         icon: fas fa-link
@@ -118,6 +94,6 @@ categories:
         icon: fas fa-link
         description: '网盘挂载'
       - name: 影视库
-        url: https://emby.525866.xyz/
+        url: https://movies.525866.xyz/
         icon: fa-solid fa-clapperboard
         description: 'lf'
