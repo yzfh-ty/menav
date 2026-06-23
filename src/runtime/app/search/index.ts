@@ -61,7 +61,7 @@ function initSearch(state: RuntimeState, dom: RuntimeDom): RuntimeSearchApi {
     state.searchIndex = { initialized: false, items: [] };
   }
   if (!state.currentSearchEngine) {
-    state.currentSearchEngine = 'local';
+    state.currentSearchEngine = 'bing';
   }
   if (typeof state.isSearchActive !== 'boolean') {
     state.isSearchActive = false;
@@ -236,7 +236,8 @@ function initSearch(state: RuntimeState, dom: RuntimeDom): RuntimeSearchApi {
   function initSearchEngine(): void {
     // 从本地存储获取上次选择的搜索引擎
     const savedEngine = localStorage.getItem('searchEngine');
-    if (savedEngine && searchEngines[savedEngine]) {
+    const hasUserSelectedEngine = localStorage.getItem('searchEngineUserSelected') === '1';
+    if (hasUserSelectedEngine && savedEngine && searchEngines[savedEngine]) {
       state.currentSearchEngine = savedEngine;
     }
 
@@ -294,6 +295,7 @@ function initSearch(state: RuntimeState, dom: RuntimeDom): RuntimeSearchApi {
 
           state.currentSearchEngine = engine;
           localStorage.setItem('searchEngine', engine);
+          localStorage.setItem('searchEngineUserSelected', '1');
 
           // 更新 UI 显示
           updateSearchEngineUI();

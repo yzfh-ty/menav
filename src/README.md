@@ -10,11 +10,11 @@ Astro 现代化迁移已完成；以下是重构后的核心边界：
 
 - `src/pages`：Astro 页面入口，当前包含 `index.astro` 和默认 404。
 - `src/layouts`：页面外壳，负责侧边栏、搜索框、全局脚本和运行时配置注入。
-- `src/components`：Astro 组件，负责导航、分类、分组、站点卡片、首页仪表盘等 DOM 输出。
+- `src/components`：Astro 组件，负责导航、搜索、分类、分组、站点卡片等 DOM 输出。
 - `src/lib`：构建期核心能力，包含正式库入口、配置加载、`site-model`、缓存读取、Markdown 渲染、字体 HTML、搜索索引和安全工具。
 - `src/lib/site-model`：单一站点模型层。`buildSiteModel()` 只消费已解析配置与外部数据，不直接读 Markdown、缓存或文件系统。
 - `src/lib/bookmarks`：书签导入的 parser、icons、serializer、writer；`src/bookmark-processor.ts` 只负责 CLI 编排。
-- `src/runtime`：浏览器端运行时，负责搜索、主题、侧边栏、路由、Todo、tooltip 和运行时配置读取。
+- `src/runtime`：浏览器端运行时，负责搜索、主题、侧边栏、路由、tooltip 和运行时配置读取。
 - `src/bookmark-processor.ts`：浏览器书签导入 CLI，负责选择 HTML 文件、调用书签模块、写入书签页并补充导航。
 - `src/lib/config/init.ts`：用户配置初始化，供 `npm run init-config` 和书签导入复用。
 

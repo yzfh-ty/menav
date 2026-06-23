@@ -3,7 +3,6 @@ import Navigation from '../components/Navigation.astro';
 import PageContent from '../components/PageContent.astro';
 import RuntimeScripts from '../components/RuntimeScripts.astro';
 import SearchBar from '../components/SearchBar.astro';
-import SocialLinks from '../components/SocialLinks.astro';
 import ThemePreloadScript from '../components/ThemePreloadScript.astro';
 import type { NavigationItem, ResolvedConfig } from '../types/config';
 import type { PageEntry } from '../types/page';
@@ -16,7 +15,6 @@ interface Props {
   renderContext?: RenderContext;
   fontLinks?: string;
   fontCss?: string;
-  currentYear?: number;
   runtimeConfigJson?: string;
   version?: string;
 }
@@ -28,7 +26,6 @@ const {
   renderContext,
   fontLinks = '',
   fontCss = '',
-  currentYear,
   runtimeConfigJson = '{}',
   version = '',
 } = Astro.props;
@@ -101,22 +98,6 @@ const fontAwesomePreload = `<link rel="preload" href="${fontAwesomeCssUrl}" as="
             <Navigation navigation={navigationData} />
           </div>
           <div class="sidebar-submenu-panel" aria-label="页面分类" data-container="sidebar-submenu">
-          </div>
-        </div>
-
-        <div class="sidebar-social" data-container="social-links">
-          <SocialLinks social={config.social || []} />
-        </div>
-
-        <div class="sidebar-footer">
-          <div class="copyright">
-            <p>
-              © {currentYear}
-              <a href="https://github.com/rbetree/menav" target="_blank" rel="noopener">MeNav</a>
-            </p>
-            <p>
-              by <a href="https://github.com/rbetree" target="_blank" rel="noopener">rbetree</a>
-            </p>
           </div>
         </div>
       </nav>

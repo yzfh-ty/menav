@@ -115,19 +115,6 @@
     width: auto;
   }
 
-  .sidebar.collapsed .sidebar-footer {
-    height: auto;
-    padding: 1rem 1.2rem;
-    visibility: visible;
-    pointer-events: auto;
-    border-top: 1px solid var(--border-color);
-  }
-
-  .sidebar.collapsed .sidebar-social {
-    padding: 0.2rem 1.2rem 0.8rem;
-    flex-direction: row;
-  }
-
   .sidebar.collapsed .nav-item {
     padding: 0.6rem 0.8rem;
     justify-content: flex-start;
@@ -202,6 +189,19 @@
 
   .welcome-section h2 {
     font-size: 1.5rem;
+  }
+
+  .page-template-home {
+    padding-top: 4rem;
+  }
+
+  .page-template-home .welcome-section {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  .page-template-home .welcome-section h2 {
+    font-size: 2.4rem;
   }
 
   .welcome-section h3 {

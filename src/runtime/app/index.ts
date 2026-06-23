@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     isLightTheme: false,
     isSidebarCollapsed: false,
     pages: null,
-    currentSearchEngine: 'local',
+    currentSearchEngine: 'bing',
     isSearchActive: false,
     searchIndex: {
       initialized: false,

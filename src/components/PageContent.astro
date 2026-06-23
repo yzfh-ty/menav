@@ -1,7 +1,6 @@
 ---
 import Category from './Category.astro';
 import GitHubHeatmap from './GitHubHeatmap.astro';
-import HomeDashboard from './HomeDashboard.astro';
 import PageHeader from './PageHeader.astro';
 import SiteCard from './SiteCard.astro';
 import type { PageData } from '../types/page';
@@ -134,8 +133,14 @@ const articleCards = articlesCategories.flatMap((category) => category.cards || 
       )}
     </div>
   ) : (
-    <div class:list={['page-template', `page-template-${page.pageId}`]}>
-      {page.isHome ? <HomeDashboard page={page} /> : <PageHeader page={page} />}
+    <div
+      class:list={[
+        'page-template',
+        `page-template-${page.pageId}`,
+        page.isHome && 'page-template-home',
+      ]}
+    >
+      <PageHeader page={page} />
       {categories.map((category) => (
         <Category category={category} renderContext={renderContext} />
       ))}

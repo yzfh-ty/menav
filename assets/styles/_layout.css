@@ -25,6 +25,10 @@
   margin: 0 auto;
 }
 
+.page-template-home {
+  padding-top: 8rem;
+}
+
 /* 欢迎区域 - Design A (Minimalist) */
 .welcome-section {
   width: 100%;
@@ -98,4 +102,25 @@
   font-size: 0.9rem;
   opacity: 0.85;
   white-space: nowrap;
+}
+
+.page-template-home .welcome-section {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.page-template-home .welcome-section-main {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.page-template-home .welcome-section h2 {
+  font-size: clamp(2.4rem, 4.6vw, 4rem);
+  line-height: 1.12;
+  margin-bottom: 0;
+}
+
+.page-template-home .welcome-section h3 {
+  display: none;
 }
