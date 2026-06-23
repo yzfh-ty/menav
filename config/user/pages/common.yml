@@ -20,6 +20,14 @@ categories:
         url: https://idcflare.com
         icon: fab fa-server
         description: 域名、主机等信息集散地
+      - name: 奶昔论坛
+        url: https://forum.naixi.net/
+        icon: fab fa-server
+        description: 专注于eSIM技术分享、IDC服务商等领域
+      - name: Nodeseek
+        url: https://www.nodeseek.com/
+        icon: fab fa-server
+        description: 主机爱好者打造高品质社区
       - name: Cloud Flare
         url: https://dash.cloudflare.com
         icon: fa-solid fa-cloud
